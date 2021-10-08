@@ -1,0 +1,181 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  max-width: 100%;
+  width: 100%;
+}
+
+.slideshow {
+  min-width: 100%;
+  min-height: 101%;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  border-color: lightgray;
+  border-radius: 2vw;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+.product-content p {
+  margin: 3vw;
+}
+
+.line {
+  border-color: lightgray;
+  border-radius: 2vw;
+  border-width: 0.1vw;
+  border-style: solid;
+}
+
+.product-content img {
+  width: 15vh;
+  height: 15vh;
+  margin: 3vw;
+}
+
+.name {
+  color: blue;
+  font-size: 1vw;
+}
+
+.price {
+  font-size: 1vw;
+}
+
+.price::before {
+  content: "$";
+}
+.detail-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderBtn {
+  background-color: rgb(2, 83, 150);
+  border-radius: 0.5vw;
+  border-style: none;
+  height: fit-content;
+  padding: 1vw 2vw;
+  color: white;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 162, 247);
+  border-radius: 1vw;
+  padding: 1.5vw;
+  width: fit-content;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.root p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  height: fit-content;
+  padding: 2vw;
+  margin-top: 2vw;
+  width: 100%;
+
+  border-radius: 1vw;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+}
+
+.line {
+  width: 100%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 0.1vw;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+
+  place-items: flex-start;
+  justify-items: flex-end;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0.5vw;
+}
+
+.name::first-letter,
+brand::first-letter,
+description::first-letter {
+  text-transform: uppercase;
+}
+
+.container-modal {
+  margin: auto;
+  width: 100%;
+}
+.close-box {
+  display: flex;
+}
+.close {
+  width: 2vw;
+  height: 2vw;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
