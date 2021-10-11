@@ -5,36 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css" type="text/css" />
-    <link rel="stylesheet" href="./navHeader.css" type="text/css" />
-    <link rel="stylesheet" href="./slideshow.css" type="text/css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <div class="container">
-      <div class="root-nav-header">
-        <div class="container-nav-header">
-          <p>Sample<span>Site</span></p>
-          <img class="cartBtn" src="./shopping-cart.png"/></img>
+    <div class="root">
+      <div class="header">
+        <p>Sample<span>Site</span></p>
+        <img class="cartIcon" src="shopping-cart.png" />
+      </div>
+      <div class="line"></div>
+
+      <div class="banner">
+        <div class="mySlides fade">
+          <img src="./image1.jpg" />
         </div>
-        <!-- <div class="line"></div> -->
+
+        <div class="mySlides fade">
+          <img src="image2.jpg" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="image3.jpg" />
+        </div>
+
+        <div class="above-content">
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <div class="text-content">
+            <p class="title-banner">Present your awesome product</p>
+            <p class="sub-title-banner">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel
+              natus necessitatibus eligendi hic voluptates, nisi excepturi ea,
+              nihil recusandae placeat qui provident ex, sit ut consequuntur
+              architecto? Ipsum, voluptas! voluptas!
+            </p>
+
+            <button>buy now</button>
+          </div>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+      </div>
+      <div class="carts-wrap">
+        <div class="carts"></div>
       </div>
 
-      <object class="slideshow" data="slideshow.html" type="text/html"></object>
-
-      <div class="list"></div>
-
       <div class="modal">
- <div class="root">
-  <img class="close" src="./cancel.png"/>
-      <p>Your Order</p>
-      
-      <div class="container-modal"></div>
-    </div></div>
-
-     
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-list">
+            <p>Your Order</p>
+            <div class="modal-products"></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript" src="./model.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
